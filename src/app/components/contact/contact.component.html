@@ -1,0 +1,73 @@
+<div style="margin-top: 105px; min-height: calc(-120px + 100vh);"
+    class="middle-content d-flex flex-column  align-items-center">
+
+    <div class="my-main-text d-inline-block pt-4">
+        <h2 class="mb-3">CONATCT SECTION</h2>
+        <div class="my-two-lines d-flex justify-content-center align-items-center mb-3">
+            <div class="my-left-line "></div>
+            <i class="fa-solid fa-star" style="color: rgb(44, 62, 80);"></i>
+            <div class="my-right-line"></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container  d-flex justify-content-center">
+        <form class="row">
+            <div class="col-sm-12">
+
+                <div class="input-box">
+                    <div [class.active]="isTyping1" class="label-box">
+                        <label for="name" class="label-name">userName:</label>
+                    </div>
+                    <input (input)="onInput1($event)" id="name" placeholder="userName" type="text" class="my-input"
+                        name="name">
+                </div>
+            </div>
+
+
+            <div class="col-sm-12">
+                <div class="input-box">
+                    <div [class.active]="isTyping2" class="label-box">
+                        <label for="age" class="label-name">userAge:</label>
+                    </div>
+                    <input (input)="onInput2($event)" id="age" placeholder="userAge" type="text" class="my-input"
+                        name="age">
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+
+                <div class="input-box">
+                    <div [class.active]="isTyping3" class="label-box">
+                        <label for="email" class="label-name">userEmail:</label>
+                    </div>
+                    <input (input)="onInput3($event)" id="email" placeholder="userEmail" type="email" name="email"
+                        class="my-input">
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-12">
+
+                <div class="input-box">
+                    <div [class.active]="isTyping4" class="label-box">
+                        <label for="password" class="label-name">userPassword:</label>
+                    </div>
+                    <input (input)="onInput4($event)" id="password" placeholder="userPassword" class="my-input"
+                        type="password" name="Password">
+                </div>
+
+            </div>
+
+            <div class="col-sm-12">
+                <button (click)="preventDefaultOfButton($event)" class="mt-4 my-btn rounded text-white">send
+                    Message</button>
+
+            </div>
+        </form>
+
+    </div>
+</div>

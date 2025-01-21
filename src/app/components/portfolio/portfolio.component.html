@@ -1,0 +1,182 @@
+<div style="margin-top: 105px; min-height: calc(-120px + 100vh);"class="middle-content d-flex flex-column  align-items-center">
+
+    <div class="my-main-text d-inline-block pt-4">
+        <h2 class="mb-3">PORTFOLIO COMPONENT</h2>
+        <div class="my-two-lines d-flex justify-content-center align-items-center mb-3">
+            <div class="my-left-line "></div>
+            <i class="fa-solid fa-star" style="color: rgb(44, 62, 80);"></i>
+            <div class="my-right-line"></div>
+        </div>
+    </div>
+
+    <div class="container mb-3">
+        <div class="row gy-5">
+
+            <div class="col-lg-4 col-md-6">
+                <!-- Button trigger modal -->
+                <div (click)="Ishidden()" class="card my-card position-relative" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <div
+                        class="my-layer position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+
+                    </div>
+                    <img src="my project 1.png" class="card-img-top w-100" alt="my first project">
+                </div>
+
+                <!-- Modal -->
+                <div [class.hidden-modal]="hiddenModal" (click)="Ishidden()" class="modal" id="staticBackdrop"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+
+                            <div (click)="stopClickPropagation($event)" class="modal-body">
+                                <img src="my project 1.png" alt="my first project" class="w-100">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <!-- Button trigger modal -->
+                <div (click)="Ishidden()" class="card my-card position-relative" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop2">
+                    <div
+                        class="my-layer position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+
+                    </div>
+                    <img src="my project 2.png" class="card-img-top w-100" alt="my second project">
+                </div>
+
+                <!-- Modal -->
+                <div [class.hidden-modal]="hiddenModal" (click)="Ishidden()" class="modal" id="staticBackdrop2"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+
+                            <div (click)="stopClickPropagation($event)" class="modal-body">
+                                <img src="my project 2.png" alt="my second project" class="w-100">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <!-- Button trigger modal -->
+                <div (click)="Ishidden()" class="card my-card position-relative" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop3">
+                    <div
+                        class="my-layer position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+
+                    </div>
+                    <img src="my project 3.png" class="card-img-top w-100" alt="my thired project">
+                </div>
+
+                <!-- Modal -->
+                <div [class.hidden-modal]="hiddenModal" (click)="Ishidden()" class="modal" id="staticBackdrop3"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+
+                            <div (click)="stopClickPropagation($event)" class="modal-body">
+                                <img src="my project 3.png" alt="my thired project" class="w-100">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+                <!-- Button trigger modal -->
+                <div (click)="Ishidden()" class="card my-card position-relative" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <div
+                        class="my-layer position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+
+                    </div>
+                    <img src="my project 1.png" class="card-img-top w-100" alt="my first project">
+                </div>
+
+                <!-- Modal -->
+                <div [class.hidden-modal]="hiddenModal" (click)="Ishidden()" class="modal" id="staticBackdrop"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+
+                            <div (click)="stopClickPropagation($event)" class="modal-body">
+                                <img src="my project 1.png" alt="my first project" class="w-100">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <!-- Button trigger modal -->
+                <div (click)="Ishidden()" class="card my-card position-relative" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop2">
+                    <div
+                        class="my-layer position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+
+                    </div>
+                    <img src="my project 2.png" class="card-img-top w-100" alt="my second project">
+                </div>
+
+                <!-- Modal -->
+                <div [class.hidden-modal]="hiddenModal" (click)="Ishidden()" class="modal" id="staticBackdrop2"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+
+                            <div (click)="stopClickPropagation($event)" class="modal-body">
+                                <img src="my project 2.png" alt="my second project" class="w-100">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <!-- Button trigger modal -->
+                <div (click)="Ishidden()" class="card my-card position-relative" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop3">
+                    <div
+                        class="my-layer position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+
+                    </div>
+                    <img src="my project 3.png" class="card-img-top w-100" alt="my thired project">
+                </div>
+
+                <!-- Modal -->
+                <div [class.hidden-modal]="hiddenModal" (click)="Ishidden()" class="modal" id="staticBackdrop3"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+
+                            <div (click)="stopClickPropagation($event)" class="modal-body">
+                                <img src="my project 3.png" alt="my thired project" class="w-100">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
